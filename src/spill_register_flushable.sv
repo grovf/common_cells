@@ -11,6 +11,10 @@
 //
 // Fabian Schuiki <fschuiki@iis.ee.ethz.ch>
 
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - put `GROVF_RDMA_CLK_RSTN macro for ff instanse
+
 
 /// A register with handshakes that completely cuts any combinational paths
 /// between the input and output. This spill register can be flushed.

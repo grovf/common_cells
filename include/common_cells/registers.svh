@@ -13,6 +13,10 @@
 // Author: Stefan Mach <smach@iis.ee.ethz.ch>
 // Description: Common register defines for RTL designs
 
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - put `GROVF_RDMA_CLK_RSTN macro for ff instanse
+
 `ifndef COMMON_CELLS_REGISTERS_SVH_
 `define COMMON_CELLS_REGISTERS_SVH_
 

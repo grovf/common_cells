@@ -44,6 +44,12 @@
 /// If it is `1'b1` two `lzc`, a masking logic stage and a two input multiplexer are instantiated.
 /// However these are small in respect of the data multiplexers needed, as the width of the `req_i`
 /// signal is usually less as than `DataWidth`.
+
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - put `GROVF_RDMA_CLK_RSTN macro for ff instanse
+
+
 module rr_arb_tree #(
   /// Number of inputs to be arbitrated.
   parameter int unsigned NumIn      = 64,

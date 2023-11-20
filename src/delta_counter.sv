@@ -10,6 +10,10 @@
 
 // Up/down counter with variable delta
 
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - put `GROVF_RDMA_CLK_RSTN macro for ff instanse
+
 module delta_counter #(
     parameter int unsigned WIDTH = 4,
     parameter bit STICKY_OVERFLOW = 1'b0
