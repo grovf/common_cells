@@ -49,6 +49,10 @@
 // Anton Smolenskiy <anton.s@grovf.com>
 // - put `GROVF_RDMA_CLK_RSTN macro for ff instanse
 
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
 
 module rr_arb_tree #(
   /// Number of inputs to be arbitrated.

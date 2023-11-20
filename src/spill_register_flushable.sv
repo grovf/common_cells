@@ -14,7 +14,8 @@
 // Modified:
 // Anton Smolenskiy <anton.s@grovf.com>
 // - put `GROVF_RDMA_CLK_RSTN macro for ff instanse
-
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
 
 /// A register with handshakes that completely cuts any combinational paths
 /// between the input and output. This spill register can be flushed.

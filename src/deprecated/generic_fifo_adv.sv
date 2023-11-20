@@ -10,6 +10,11 @@
 
 // Igor Loi <igor.loi@unibo.it>
 
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 module generic_fifo_adv 
 #( 
    parameter int unsigned          DATA_WIDTH = 32,

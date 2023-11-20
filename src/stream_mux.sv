@@ -11,6 +11,11 @@
 /// Stream multiplexer: connects the output to one of `N_INP` data streams with valid-ready
 /// handshaking.
 
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 module stream_mux #(
   parameter type DATA_T = logic,  // Vivado requires a default value for type parameters.
   parameter integer N_INP = 0,    // Synopsys DC requires a default value for value parameters.

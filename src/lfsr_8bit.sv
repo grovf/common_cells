@@ -13,6 +13,11 @@
 // Date: 12.11.2017
 // Description: 8-bit LFSR
 
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 /// 8 bit Linear Feedback Shift register
 module lfsr_8bit #(
   parameter logic        [7:0] SEED  = 8'b0,

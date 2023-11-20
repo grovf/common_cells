@@ -14,6 +14,11 @@
 // Description: Pseudo Least Recently Used Tree (PLRU)
 // See: https://en.wikipedia.org/wiki/Pseudo-LRU
 
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 module plru_tree #(
   parameter int unsigned ENTRIES = 16
 ) (

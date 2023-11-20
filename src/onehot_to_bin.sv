@@ -10,6 +10,11 @@
 
 // Franceco Conti <fconti@iis.ee.ethz.ch>
 
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 module onehot_to_bin #(
     parameter int unsigned ONEHOT_WIDTH = 16,
     // Do Not Change

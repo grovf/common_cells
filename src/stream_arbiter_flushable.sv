@@ -13,6 +13,11 @@
 // asserted, `oup_data_o` remains invariant until the output handshake has occurred.  The
 // arbitration scheme is fair round-robin tree, see `rr_arb_tree` for details.
 
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 module stream_arbiter_flushable #(
     parameter type      DATA_T = logic,   // Vivado requires a default value for type parameters.
     parameter integer   N_INP = -1,       // Synopsys DC requires a default value for parameters.

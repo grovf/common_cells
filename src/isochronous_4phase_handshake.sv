@@ -38,6 +38,11 @@
 /// There are _no_ restrictions on which clock domain should be the faster, any integer
 /// ratio will work.
 
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 `include "common_cells/registers.svh"
 
 module isochronous_4phase_handshake (

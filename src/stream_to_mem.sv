@@ -13,6 +13,12 @@
 
 /// `stream_to_mem`: Allows to use memories with flow control (`valid`/`ready`) for requests but without flow
 /// control for output data to be used in streams.
+
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 `include "common_cells/registers.svh"
 module stream_to_mem #(
   /// Memory request payload type, usually write enable, write data, etc.

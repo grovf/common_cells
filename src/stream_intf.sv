@@ -13,6 +13,12 @@
 
 /// A stream interface with custom payload of type `payload_t`.
 /// Handshaking rules as defined in the AXI standard.
+
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 interface STREAM_DV #(
   /// Custom payload type.
   parameter type payload_t = logic

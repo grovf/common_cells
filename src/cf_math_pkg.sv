@@ -15,6 +15,12 @@
 /// functions.  Introduced in Verilog 2001 (IEEE Std 1364-2001), a constant function (§ 10.3.5) is a
 /// function whose value can be evaluated at compile time or during elaboration.  A constant function
 /// must be called with arguments that are constants.
+
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 package cf_math_pkg;
 
     /// Ceiled Division of Two Natural Numbers

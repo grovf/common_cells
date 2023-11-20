@@ -18,6 +18,12 @@
 //
 // Description: Shift register
 //
+
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 module lfsr_16bit #(
     parameter logic [15:0] SEED  = 8'b0,
     parameter int unsigned WIDTH = 16

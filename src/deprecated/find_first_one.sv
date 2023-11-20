@@ -14,6 +14,12 @@
 /// A leading-one finder / leading zero counter.
 /// Set FLIP to 0 for find_first_one => first_one_o is the index of the first one (from the LSB)
 /// Set FLIP to 1 for leading zero counter => first_one_o is the number of leading zeroes (from the MSB)
+
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 module find_first_one #(
     /// The width of the input vector.
     parameter int WIDTH = -1,

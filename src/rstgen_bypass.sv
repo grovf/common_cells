@@ -12,6 +12,11 @@
 // Description: This module is a reset synchronizer with a dedicated reset bypass pin for testmode reset.
 // Pro Tip: The wise Dr. Schaffner recommends at least 4 registers!
 
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 module rstgen_bypass #(
     parameter int unsigned NumRegs = 4
 ) (

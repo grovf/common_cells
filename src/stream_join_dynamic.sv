@@ -15,6 +15,12 @@
 // handshaking with dependency rules as in AXI4) to a single output stream. The subset of streams
 // to join can be configured dynamically via `sel_i`. The output handshake happens only after
 // there has been a handshake. The data channel flows outside of this module.
+
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 module stream_join_dynamic #(
   /// Number of input streams
   parameter int unsigned N_INP = 32'd0 // Synopsys DC requires a default value for parameters.

@@ -15,6 +15,12 @@
 /// An omega network is isomorphic to a butterfly network.
 ///
 /// Handshaking rules as defined by the `AMBA AXI` standard on default.
+
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 module stream_omega_net #(
   /// Number of inputs into the network (`> 0`).
   parameter int unsigned NumInp      = 32'd0,

@@ -12,6 +12,12 @@
 ///   in_i = 000_1000, empty_o = 0, cnt_o = 3 (mode = 0)
 /// Furthermore, this unit contains a more efficient implementation for Verilator (simulation only).
 /// This speeds up simulation significantly.
+
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 module lzc #(
   /// The width of the input vector.
   parameter int unsigned WIDTH = 2,

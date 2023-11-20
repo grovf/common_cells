@@ -16,6 +16,11 @@
 // This module has no data ports because stream data does not need to be forked: the data of the
 // input stream can just be applied at all output streams.
 
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 module stream_fork #(
     parameter int unsigned N_OUP = 0    // Synopsys DC requires a default value for parameters.
 ) (

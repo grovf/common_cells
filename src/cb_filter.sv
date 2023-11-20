@@ -39,6 +39,11 @@
 //   - `filter_empty_o`:  Filter is empty.
 //   - `filter_error_o`:  One of the internal counters or buckets overflowed.
 
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 /// This is a counting bloom filter
 module cb_filter #(
   parameter int unsigned KHashes     =  32'd3,  // Number of hash functions

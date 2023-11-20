@@ -20,6 +20,11 @@
 // a successful trial (clr_i).
 //
 
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 module exp_backoff #(
   /// Seed for 16bit LFSR
   parameter int unsigned Seed   = 'hffff,

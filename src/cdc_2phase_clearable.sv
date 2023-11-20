@@ -46,6 +46,12 @@
 ///    why).
 ///
 ///
+
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 /* verilator lint_off DECLFILENAME */
 
 `include "common_cells/registers.svh"

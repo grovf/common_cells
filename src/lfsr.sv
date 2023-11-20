@@ -19,6 +19,11 @@
 // patterns. The additional cipher layers can only be used for an LFSR width
 // of 64bit, since the block cipher has been designed for that block length.
 
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 module lfsr #(
   parameter int unsigned          LfsrWidth     = 64,   // [4,64]
   parameter int unsigned          OutWidth      = 8,    // [1,LfsrWidth]

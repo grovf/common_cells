@@ -12,6 +12,12 @@
 
 /// Split memory access over multiple parallel banks, where each bank has its own req/gnt
 /// request and valid response direction.
+
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 module mem_to_banks_detailed #(
   /// Input address width.
   parameter int unsigned AddrWidth = 32'd0,

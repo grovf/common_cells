@@ -42,6 +42,12 @@
 ///
 /// CONSTRAINT: See the constraints for `cdc_2phase`. An additional maximum
 /// delay path needs to be specified from fifo_data_q to dst_data_o.
+
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 module cdc_fifo_2phase #(
   /// The data type of the payload transported by the FIFO.
   parameter type T = logic,

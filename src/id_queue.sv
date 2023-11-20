@@ -45,6 +45,11 @@
 // Maintainers:
 // - Andreas Kurth <akurth@iis.ee.ethz.ch>
 
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 module id_queue #(
     parameter int ID_WIDTH  = 0,
     parameter int CAPACITY  = 0,

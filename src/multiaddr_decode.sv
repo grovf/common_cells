@@ -27,6 +27,12 @@
 /// is set.
 /// For each rule, it also returns the subset of addresses in {`addr_i`, `mask_i`} which
 /// match the rule {`addr_o[i]`, `mask_o[i]`}.
+
+// Modified:
+// Anton Smolenskiy <anton.s@grovf.com>
+// - "pragma translate on/off" replaced by "synopsys translate on/off"
+//   since it's more common for most of the tools
+
 module multiaddr_decode #(
   /// Highest index which can happen in a rule.
   parameter int unsigned NoIndices = 32'd0,
