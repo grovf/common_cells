@@ -40,6 +40,7 @@
 // Anton Smolenskiy <anton.s@grovf.com>
 // - "pragma translate on/off" replaced by "synopsys translate on/off"
 //   since it's more common for most of the tools
+// - defferred assertion replaces by immediate, since it's not needed here and not supported by Cadence tools
 
 module addr_decode_dync #(
   /// Highest index which can happen in a rule.
@@ -141,7 +142,7 @@ module addr_decode_dync #(
       $fatal(1, $sformatf("At least one index needed"));
   end
 
-  assert final ($onehot0(matched_rules) || config_ongoing_i) else
+  assert ($onehot0(matched_rules) || config_ongoing_i) else
     $warning("More than one bit set in the one-hot signal, matched_rules");
 
   // These following assumptions check the validity of the address map.
